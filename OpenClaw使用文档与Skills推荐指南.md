@@ -59,29 +59,25 @@ OpenClaw 是模型无关的，支持灵活切换国内外主流大模型：
 
 #### 国际主流模型
 
-> **数据更新时间：2026年4月10日**
-
 | Provider | 推荐模型 | 特点 |
 | :--- | :--- | :--- |
-| **Anthropic** | claude-opus-4-6 / claude-sonnet-4-6 / claude-haiku-4-5 | Opus 4.6为旗舰推理模型（2026年2月发布），100万token上下文，SWE-Bench Pro 62%；Sonnet 4.6为平衡型主力，性价比高 |
-| **OpenAI** | gpt-5.4 / gpt-5.4-pro / gpt-5.4-thinking | GPT-5.4为最新旗舰（2026年3月发布），100万token上下文，GDPval综合基准83%，支持深度思考模式 |
-| **Google** | gemini-3.1-pro / gemini-3.1-flash | Gemini 3.1 Pro为最新旗舰（2026年2月发布），200万token上下文，原生四模态（文本/图片/音频/视频），GPQA Diamond 94.3% |
-| **DeepSeek** | deepseek-v3.2 / deepseek-r1 | V3.2为当前最新（2025年12月发布），性价比极高，中文能力强，推理成本低至GPT-4的1/70 |
+| **Anthropic** | claude-opus-4-6 / claude-sonnet-4-6 / claude-haiku-4-5 | Opus 4.6，100万token上下文，SWE-Bench Pro 62%；Sonnet 4.6为平衡型主力，性价比高 |
+| **OpenAI** | gpt-5.4 / gpt-5.4-pro / gpt-5.4-thinking | GPT-5.4，100万token上下文，GDPval综合基准83%，支持深度思考模式 |
+| **Google** | gemini-3.1-pro / gemini-3.1-flash | Gemini 3.1 Pro，200万token上下文，原生四模态（文本/图片/音频/视频），GPQA Diamond 94.3% |
+| **DeepSeek** | deepseek-v3.2 / deepseek-r1 | V3.2，性价比极高，中文能力强，推理成本低至GPT-4的1/70 |
 | **Ollama** | 本地模型 | 完全离线，隐私安全 |
 | **OpenRouter** | 多模型路由 | 一键切换，成本优化 |
 
 #### 国内主流模型
 
-> **数据更新时间：2026年4月10日**
-
 | Provider | 推荐模型 | 特点 | 配置要点 |
 | :--- | :--- | :--- | :--- |
-| **智谱 GLM** | glm-5.1 / glm-5-turbo / glm-4.7-flash | GLM-5.1为最新旗舰（2026年4月7日发布），SWE-Bench Pro 58.4%全球最高分，综合能力对齐Claude Opus 4.6，支持8小时连续自主工作 | Base URL: `https://open.bigmodel.cn/api/paas/v4` |
-| **月之暗面 Kimi** | kimi-k2.5 / kimi-latest / moonshot-v1-128k | Kimi K2.5为最新旗舰（2026年1月发布），原生多模态架构，256K超长上下文，MoE架构总参数1万亿 | Base URL: `https://api.moonshot.cn/v1` |
-| **阿里云通义千问** | qwen3.6-plus / qwen3.6-max | Qwen3.6-Plus为最新旗舰（2026年4月2日发布），中国编程能力最强模型，100万token超长上下文 | Base URL: `https://dashscope.aliyuncs.com/compatible-mode/v1` |
-| **百度文心** | ernie-5.0-pro / ernie-5.0-ultra / ernie-5.0-lite | ERNIE 5.0为最新旗舰（2026年1月发布），2.4万亿参数，原生全模态统一建模，激活参数比低于3% | 需配置 QIANFAN_API_KEY |
-| **MiniMax** | minimax-m2.7 / minimax-m2.5 / minimax-m2.5-highspeed | M2.7为最新旗舰（2026年3月18日发布，4月12日开源），2300亿参数/100亿激活，支持Agent Teams多智能体协作，SWE-Pro 56.22% | Base URL: `https://api.minimax.chat/v1` |
-| **腾讯混元** | hunyuan-3.0 / hunyuan-turbo | 混元3.0为最新旗舰（2026年4月发布），全面转向AI智能体架构，支持长时记忆与多模态理解 | 需配置腾讯云密钥 |
+| **智谱 GLM** | glm-5.1 / glm-5-turbo / glm-4.7-flash | GLM-5.1，SWE-Bench Pro 58.4%全球最高分，综合能力对齐Claude Opus 4.6，支持8小时连续自主工作 | Base URL: `https://open.bigmodel.cn/api/paas/v4` |
+| **月之暗面 Kimi** | kimi-k2.5 / kimi-latest / moonshot-v1-128k | Kimi K2.5，原生多模态架构，256K超长上下文，MoE架构总参数1万亿 | Base URL: `https://api.moonshot.cn/v1` |
+| **阿里云通义千问** | qwen3.6-plus / qwen3.6-max | Qwen3.6-Plus，中国编程能力最强模型，100万token超长上下文 | Base URL: `https://dashscope.aliyuncs.com/compatible-mode/v1` |
+| **百度文心** | ernie-5.0-pro / ernie-5.0-ultra / ernie-5.0-lite | ERNIE 5.0，2.4万亿参数，原生全模态统一建模，激活参数比低于3% | 需配置 QIANFAN_API_KEY |
+| **MiniMax** | minimax-m2.7 / minimax-m2.5 / minimax-m2.5-highspeed | M2.7，2300亿参数/100亿激活，支持Agent Teams多智能体协作，SWE-Pro 56.22% | Base URL: `https://api.minimax.chat/v1` |
+| **腾讯混元** | hunyuan-3.0 / hunyuan-turbo | 混元3.0，全面转向AI智能体架构，支持长时记忆与多模态理解 | 需配置腾讯云密钥 |
 
 #### 国内模型配置示例
 
